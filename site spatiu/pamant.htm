@@ -1,0 +1,299 @@
+<!doctype html>
+<html>
+<head>
+<title>Pamant</title>
+<style>
+.header {
+  border: 5px outset lightgray;
+  background-color: gray;    
+  text-align: center;
+background: url("pamant.jpg");
+background-repeat:no-repeat;
+width: 100vw; /* Lățimea completă a ecranului */
+height: 400px; /* Poți ajusta înălțimea după preferință */
+background-size: cover; /* Asigură că imaginea acoperă întregul spațiu */
+background-position: center; /* Centrează imaginea */
+
+}
+
+</style>
+</head>
+<!doctype html>
+<html>
+
+<head>
+    <style>
+        #menu-bar {
+          width: 99%;
+          margin: 0px 0px 0px 0px;
+          padding: 6px 6px 4px 6px;
+          height: 40px;
+          line-height: 100%;
+          border-radius: 24px;
+          -webkit-border-radius: 24px;
+          -moz-border-radius: 24px;
+          box-shadow: 2px 2px 3px #666666;
+          -webkit-box-shadow: 2px 2px 3px #666666;
+          -moz-box-shadow: 2px 2px 3px #666666;
+          background: #8B8B8B;
+          background: linear-gradient(top,  #A9A9A9,  #7A7A7A);
+          background: -ms-linear-gradient(top,  #A9A9A9,  #7A7A7A);
+          background: -webkit-gradient(linear, left top, left bottom, from(#A9A9A9), to(#7A7A7A));
+          background: -moz-linear-gradient(top,  #A9A9A9,  #7A7A7A);
+          border: solid 1px #6D6D6D;
+          position:relative;
+          z-index:999;
+        }
+        #menu-bar li {
+          margin: 0px 0px 6px 0px;
+          padding: 0px 6px 0px 6px;
+          float: left;
+          position: relative;
+          list-style: none;
+        }
+        #menu-bar a {
+          font-weight: bold;
+          font-family: arial;
+          font-style: italic;
+          font-size: 24px;
+          color: #E7E5E5;
+          text-decoration: none;
+          display: block;
+          padding: 6px 20px 6px 20px;
+          margin: 0;
+          margin-bottom: 6px;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          text-shadow: 4px 4px 6px #000000;
+        }
+        #menu-bar li ul li a {
+          margin: 0;
+        }
+        #menu-bar .active a, #menu-bar li:hover > a {
+          background: #0399D4;
+          background: linear-gradient(top,  #EBEBEB,  #A1A1A1);
+          background: -ms-linear-gradient(top,  #EBEBEB,  #A1A1A1);
+          background: -webkit-gradient(linear, left top, left bottom, from(#EBEBEB), to(#A1A1A1));
+          background: -moz-linear-gradient(top,  #EBEBEB,  #A1A1A1);
+          color: #444444;
+          -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+          -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+          text-shadow: 2px 2px 3px #FFFFFF;
+        }
+        #menu-bar ul li:hover a, #menu-bar li:hover li a {
+          background: none;
+          border: none;
+          color: #666;
+          -box-shadow: none;
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+        }
+        #menu-bar ul a:hover {
+          background: #0399D4 !important;
+          background: linear-gradient(top,  #04ACEC,  #0186BA) !important;
+          background: -ms-linear-gradient(top,  #04ACEC,  #0186BA) !important;
+          background: -webkit-gradient(linear, left top, left bottom, from(#04ACEC), to(#0186BA)) !important;
+          background: -moz-linear-gradient(top,  #04ACEC,  #0186BA) !important;
+          color: #FFFFFF !important;
+          border-radius: 0;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          text-shadow: 2px 2px 3px #FFFFFF;
+        }
+        #menu-bar li:hover > ul {
+          display: block;
+        }
+        #menu-bar ul {
+          background: #DDDDDD;
+          background: linear-gradient(top,  #FFFFFF,  #CFCFCF);
+          background: -ms-linear-gradient(top,  #FFFFFF,  #CFCFCF);
+          background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#CFCFCF));
+          background: -moz-linear-gradient(top,  #FFFFFF,  #CFCFCF);
+          display: none;
+          margin: 0;
+          padding: 0;
+          width: 185px;
+          position: absolute;
+          top: 30px;
+          left: 0;
+          border: solid 1px #B4B4B4;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -webkit-box-shadow: 2px 2px 3px #222222;
+          -moz-box-shadow: 2px 2px 3px #222222;
+          box-shadow: 2px 2px 3px #222222;
+        }
+        #menu-bar ul li {
+          float: none;
+          margin: 0;
+          padding: 0;
+        }
+        #menu-bar ul a {
+          padding:10px 0px 10px 15px;
+          color:#424242 !important;
+          font-size:12px;
+          font-style:normal;
+          font-family:arial;
+          font-weight: normal;
+          text-shadow: 2px 2px 3px #FFFFFF;
+        }
+        #menu-bar ul li:first-child > a {
+          border-top-left-radius: 10px;
+          -webkit-border-top-left-radius: 10px;
+          -moz-border-radius-topleft: 10px;
+          border-top-right-radius: 10px;
+          -webkit-border-top-right-radius: 10px;
+          -moz-border-radius-topright: 10px;
+        }
+        #menu-bar ul li:last-child > a {
+          border-bottom-left-radius: 10px;
+          -webkit-border-bottom-left-radius: 10px;
+          -moz-border-radius-bottomleft: 10px;
+          border-bottom-right-radius: 10px;
+          -webkit-border-bottom-right-radius: 10px;
+          -moz-border-radius-bottomright: 10px;
+        }
+        #menu-bar:after {
+          content: ".";
+          display: block;
+          clear: both;
+          visibility: hidden;
+          line-height: 0;
+          height: 0;
+        }
+        #menu-bar {
+          display: inline-block;
+        }
+          html[xmlns] #menu-bar {
+          display: block;
+        }
+        * html #menu-bar {
+          height: 1%;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="menu-bar">
+        <li class="active"><a href="Spatiu.htm"><span id="active">Acasa</span></a></li>
+           
+        <li><a href="#">Mai multe informatii</a>
+            <ul>
+                <li><a href="Sateliti.htm">Sateliti</a></li>
+                <li><a href="Gauri%20Negre.htm">Gauri Negre</a></li>
+                <li><a href="Calea%20Lactee.htm">Calea Lactee</a></li>
+
+            </ul>
+        </li>
+<li><a href="#">Planete</a>
+            <ul>
+                <li><a href="mercur.htm">Mercur</a></li>
+                <li><a href="venus.htm">Venus</a></li>
+                <li><a href="pamant.htm">Pamant</a></li>
+                <li><a href="marte.htm">Marte</a></li>
+                <li><a href="jupiter.htm">Jupiter</a></li>
+                <li><a href="saturn.htm">Saturn</a></li>
+                <li><a href="uranus.htm">Uranus</a></li>
+               
+            </ul>
+        </li>
+        <li class="active"><a href="AboutUs.htm"><span id="active">About Us</span></a></li>
+
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+</body>
+<body style="background-image: url('star.jpg');">
+<div class="header">
+  <h1></h1>
+</div>
+<div style="color: #ffffff">
+<br>
+<p style="float: left; clear: left">
+<img src="planeta-pamant.jpg" style="width:580px;height:350px">
+<h2><ins><i>Planeta Noastra</i></ins></h2>
+<p><p style="font-size: 20px;">Pământul (numit și Terra sau „Planeta albastră”) este a treia planetă de la Soare și cea mai mare dintre planetele telurice ale Sistemului Solar, atât pentru masă, cât și pentru diametru. Este singurul corp ceresc despre care se știe că adăpostește viață. Aproximativ 29,2 % din suprafața Pământului este un uscat format din continente și insule. Restul de 70,8 % este acoperit cu apă, în mare parte de oceane, mări, golfuri și alte corpuri de apă sărată, dar și de lacuri, râuri și alte ape dulci, care împreună constituie hidrosfera. O mare parte din regiunile polare ale Pământului sunt acoperite cu gheață. Stratul exterior al Pământului este împărțit în mai multe plăci tectonice rigide care migrează pe suprafață de-a lungul a multe milioane de ani. Interiorul Pământului rămâne activ cu un nucleu interior din fier solid, un miez exterior lichid care generează câmpul magnetic al Pământului și o manta de convecție care conduce tectonica plăcilor.
+
+Atmosfera Pământului este formată în principal din azot și oxigen. Regiunile tropicale primesc mai multă energie solară decât regiunile polare și este redistribuită de circulația atmosferică și oceanică. Gazele cu efect de seră joacă, de asemenea, un rol important în reglarea temperaturii suprafeței. Clima unei regiuni nu este determinată doar de latitudine, ci și de înălțime și de apropierea de ocean, printre alți factori.</p>
+<p><p style="font-size: 20px;"></p>
+<hr>
+<br>
+<p style="float: right; clear: right">
+<img src="galaxie.jpg" style="width:550px;height:450px">
+       
+<p><h2><ins><i>Gravitatia</i></ins></h2>
+<p><p style="font-size: 20px;">Gravitația Pământului interacționează cu alte obiecte din spațiu, în special cu Soarele și Luna, singurul satelit natural al Pământului. Pământul orbitează în jurul Soarelui în aproximativ 365,25 de zile. Axa de rotație a Pământului este înclinată în raport cu planul său orbital, producând anotimpuri pe Pământ. Interacțiunea gravitațională dintre Pământ și Lună cauzează mareele, stabilizează orientarea Pământului în jurul axei sale, și încetinește treptat rotația acestuia. Pământul este cea mai densă planetă din Sistemul Solar și cea mai mare dintre cele patru planete telurice.
+</p>
+<hr>
+<p><h2><ins><i>Istoria formării</p></h2></ins></i>
+<p style="font-size: 20px;">
+Conform datărilor radiometrice și a altor dovezi, Pământul s-a format în urmă cu peste 4,5 miliarde de ani din gazele sistemului solar timpuriu. În timpul primului miliard de ani din istoria Pământului s-a format oceanul și apoi s-a dezvoltat viața în el. Viața s-a răspândit la nivel global și a modificat atmosfera și suprafața Pământului, ducând la proliferarea organismelor anaerobe și, mai târziu, a organismelor aerobe. Unele dovezi geologice indică faptul că viața ar fi putut să apară încă de acum 4,1 miliarde de ani. De atunci, combinația distanței Pământului față de Soare, proprietățile fizice și istoria geologică au permis vieții să evolueze și să prospere. În istoria vieții pe Pământ, biodiversitatea a trecut prin perioade lungi de expansiune, ocazional punctate de extincții în masă. Peste 99 % din toate speciile care au trăit vreodată pe Pământ sunt extincte. 8 miliarde de oameni trăiesc astăzi pe Pământ și depind de biosfera și resursele sale naturale pentru supraviețuire. Oamenii au un impact din ce în ce mai mare asupra suprafeței Pământului, a hidrologiei, a proceselor atmosferice și a altor vieți.
+<hr>
+
+<br>
+<p style="float: left; clear: left">
+<left><img src="pamant2.jpg" style="width:650px;height:450px"></left>
+<br>
+<h2><ins><i>Informatii Suplimentare</i></ins></h2>
+<p><p style="font-size: 20px;">
+<p style="font-size: 20px;">Pământul este singura planetă din Sistemul Solar al cărei nume nu derivă din mitologia greacă sau romană. Toate celelalte planete au fost denumite după zei și zeițe din mitologia greco-romană. În română, cuvântul „pământ” este moștenit din latină pavimentum, care înseamnă „pământ bătătorit și nivelat”, „pardoseală cu lespezi sau mozaic”, „pavaj”, „podea”, „drum pietruit”, „loc neted”, „bătătură”.
+
+Terra provine din latinescul tĕrra (pământ, sol), care la rândul său derivă din termenul de origine indo-europeană terse, cu sensul de „parte uscată”, opus „părții apoase”. Dar Terra a mai fost denumită în trecut și ca orbe terracqueo. Cuvântul latin orbe a avut mai întâi semnificația „cerc” și apoi de „lume”.
+
+Cuvintele ce se referă la Terra pot fi formate în mai multe moduri. Primul este folosirea rădăcinii terra-, ca de exemplu cuvântul „terestru”. Mai există și rădăcina telur-, cum se poate vedea în cuvintele teluric, telurian. Ambii termeni provin de la zeița romană Terra Mater, ce se pare că și-a primit numele, la rândul ei, de la vechea denumire de Tellus Mater. Termenii științifici precum geografie, geocentric, geotermal folosesc prefixul grecesc geo-, derivat din numele zeiței Gaia, echivalenta Terrei Mater în mitologia greacă.
+</p>
+<p><p style="font-size: 20px;"></p>
+<p>
+<p style="font-size: 20px;">
+Atmosfera și oceanele Pământului s-au format prin activitatea vulcanică și de expulzare.Vaporii de apă proveniți din aceste surse s-au condensat în oceane, amplificate cu apă și gheață de la asteroizi, protoplante și comete. Este posibil ca apă suficientă pentru a umple oceanele să fi fost întotdeauna pe Pământ de la începutul formării planetei. În acest model, gazele cu efect de seră din atmosferă au păstrat oceanele să nu înghețe când Soarele nou format nu avea decât 70 % din luminozitatea actuală. Acum 3,5 miliarde de ani în urmă câmpul magnetic al Pământului s-a stabilizat, împiedicând împrăștierea atmosferei de către vântul solar.
+
+Pe măsură ce stratul exterior topit al Pământului s-a răcit, s-a format prima crustă solidă, despre care se crede că a avut o compoziție mafică. Prima crustă continentală, care avea o compoziție mai felsică, s-a format prin topirea parțială a acestei cruste mafice. Prezența boabelor de zircon mineral din Hadean în rocile sedimentare eoarhiene sugerează că cel puțin o crustă felsică a existat încă de acum 4,4 miliarde de ani, la numai 140 milioane de ani după formarea Pământului. Există două modele principale ale modului în care acest volum inițial mic de crustă continentală a evoluat pentru a ajunge la abundența actuală: o creștere relativ constantă până în prezent, care este susținută de datarea radiometrică a crustei continentală la nivel global și (2) o creștere rapidă inițială a volumului de crustă continentală în timpul Arheanului, formând cea mai mare parte a crustei continentale care există acum, care este susținută de dovezi izotopice de la hafniu în zirconiu și neodim în roci sedimentare. Cele două modele și datele care le susțin pot fi reconciliate prin reciclarea pe scară largă a scoarței continentale, în special în primele etape ale istoriei Pământului.
+
+Continentele au fost formate de tectonica plăcilor, un proces condus în cele din urmă de pierderea continuă a căldurii din interiorul Pământului. De-a lungul a sute de milioane de ani, supercontinentele s-au asamblat și s-au rupt. Cu aproximativ 750 de milioane de ani în urmă, unul dintre cele mai vechi supercontinente cunoscute, Rodinia, a început să se destrame. Mai târziu, continentele s-au recombinat pentru a forma Pannotia (cu 600-540 milioane de ani în urmă), apoi Pangaea, care, de asemenea, s-a destrămat acum 180 milioane de ani în urmă.
+
+Modelul actual al epocilor de gheață a început cu aproximativ 40 milioane de ani în urmă și apoi s-a intensificat în timpul Pleistocenului cu 3 milioane de ani în urmă. Regiunile cu latitudine înaltă au suferit de atunci cicluri repetate de glaciațiune și dezgheț, repetându-se la fiecare 40.000-100.000 ani. Ultima glaciație continentală s-a încheiat cu 10.000 de ani în urmă.</p>
+</p>
+<br>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .footer {
+            background-color: rgba(51, 51, 51, 0.6); /* Semi-transparent background */
+            color: white;
+            text-align: center;
+            padding: 8px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .footer a {
+            color: #FFD700;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Other content of the website -->
+
+    <footer class="footer">
+        <p>&copy; 2024  All rights reserved by Ilie Alexandru Cristian and Rusu Andrei Samuel.</p>
+            </footer>
+</body>
+</html>

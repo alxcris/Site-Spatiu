@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+<head>
+<title>Uranus</title>
+<style>
+.header {
+  border: 5px outset lightgray;
+  background-color: gray;    
+  text-align: center;
+background: url("urannus.jpg");
+background-repeat:no-repeat;
+width: 100vw; /* Lățimea completă a ecranului */
+height: 400px; /* Poți ajusta înălțimea după preferință */
+background-size: cover; /* Asigură că imaginea acoperă întregul spațiu */
+background-position: center; /* Centrează imaginea */
+
+}
+
+</style>
+</head>
+<!doctype html>
+<html>
+
+<head>
+    <style>
+        #menu-bar {
+          width: 99%;
+          margin: 0px 0px 0px 0px;
+          padding: 6px 6px 4px 6px;
+          height: 40px;
+          line-height: 100%;
+          border-radius: 24px;
+          -webkit-border-radius: 24px;
+          -moz-border-radius: 24px;
+          box-shadow: 2px 2px 3px #666666;
+          -webkit-box-shadow: 2px 2px 3px #666666;
+          -moz-box-shadow: 2px 2px 3px #666666;
+          background: #8B8B8B;
+          background: linear-gradient(top,  #A9A9A9,  #7A7A7A);
+          background: -ms-linear-gradient(top,  #A9A9A9,  #7A7A7A);
+          background: -webkit-gradient(linear, left top, left bottom, from(#A9A9A9), to(#7A7A7A));
+          background: -moz-linear-gradient(top,  #A9A9A9,  #7A7A7A);
+          border: solid 1px #6D6D6D;
+          position:relative;
+          z-index:999;
+        }
+        #menu-bar li {
+          margin: 0px 0px 6px 0px;
+          padding: 0px 6px 0px 6px;
+          float: left;
+          position: relative;
+          list-style: none;
+        }
+        #menu-bar a {
+          font-weight: bold;
+          font-family: arial;
+          font-style: italic;
+          font-size: 24px;
+          color: #E7E5E5;
+          text-decoration: none;
+          display: block;
+          padding: 6px 20px 6px 20px;
+          margin: 0;
+          margin-bottom: 6px;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          text-shadow: 4px 4px 6px #000000;
+        }
+        #menu-bar li ul li a {
+          margin: 0;
+        }
+        #menu-bar .active a, #menu-bar li:hover > a {
+          background: #0399D4;
+          background: linear-gradient(top,  #EBEBEB,  #A1A1A1);
+          background: -ms-linear-gradient(top,  #EBEBEB,  #A1A1A1);
+          background: -webkit-gradient(linear, left top, left bottom, from(#EBEBEB), to(#A1A1A1));
+          background: -moz-linear-gradient(top,  #EBEBEB,  #A1A1A1);
+          color: #444444;
+          -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+          -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+          text-shadow: 2px 2px 3px #FFFFFF;
+        }
+        #menu-bar ul li:hover a, #menu-bar li:hover li a {
+          background: none;
+          border: none;
+          color: #666;
+          -box-shadow: none;
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+        }
+        #menu-bar ul a:hover {
+          background: #0399D4 !important;
+          background: linear-gradient(top,  #04ACEC,  #0186BA) !important;
+          background: -ms-linear-gradient(top,  #04ACEC,  #0186BA) !important;
+          background: -webkit-gradient(linear, left top, left bottom, from(#04ACEC), to(#0186BA)) !important;
+          background: -moz-linear-gradient(top,  #04ACEC,  #0186BA) !important;
+          color: #FFFFFF !important;
+          border-radius: 0;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          text-shadow: 2px 2px 3px #FFFFFF;
+        }
+        #menu-bar li:hover > ul {
+          display: block;
+        }
+        #menu-bar ul {
+          background: #DDDDDD;
+          background: linear-gradient(top,  #FFFFFF,  #CFCFCF);
+          background: -ms-linear-gradient(top,  #FFFFFF,  #CFCFCF);
+          background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#CFCFCF));
+          background: -moz-linear-gradient(top,  #FFFFFF,  #CFCFCF);
+          display: none;
+          margin: 0;
+          padding: 0;
+          width: 185px;
+          position: absolute;
+          top: 30px;
+          left: 0;
+          border: solid 1px #B4B4B4;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -webkit-box-shadow: 2px 2px 3px #222222;
+          -moz-box-shadow: 2px 2px 3px #222222;
+          box-shadow: 2px 2px 3px #222222;
+        }
+        #menu-bar ul li {
+          float: none;
+          margin: 0;
+          padding: 0;
+        }
+        #menu-bar ul a {
+          padding:10px 0px 10px 15px;
+          color:#424242 !important;
+          font-size:12px;
+          font-style:normal;
+          font-family:arial;
+          font-weight: normal;
+          text-shadow: 2px 2px 3px #FFFFFF;
+        }
+        #menu-bar ul li:first-child > a {
+          border-top-left-radius: 10px;
+          -webkit-border-top-left-radius: 10px;
+          -moz-border-radius-topleft: 10px;
+          border-top-right-radius: 10px;
+          -webkit-border-top-right-radius: 10px;
+          -moz-border-radius-topright: 10px;
+        }
+        #menu-bar ul li:last-child > a {
+          border-bottom-left-radius: 10px;
+          -webkit-border-bottom-left-radius: 10px;
+          -moz-border-radius-bottomleft: 10px;
+          border-bottom-right-radius: 10px;
+          -webkit-border-bottom-right-radius: 10px;
+          -moz-border-radius-bottomright: 10px;
+        }
+        #menu-bar:after {
+          content: ".";
+          display: block;
+          clear: both;
+          visibility: hidden;
+          line-height: 0;
+          height: 0;
+        }
+        #menu-bar {
+          display: inline-block;
+        }
+          html[xmlns] #menu-bar {
+          display: block;
+        }
+        * html #menu-bar {
+          height: 1%;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="menu-bar">
+        <li class="active"><a href="Spatiu.htm"><span id="active">Acasa</span></a></li>
+           
+        <li><a href="#">Mai multe informatii</a>
+            <ul>
+                <li><a href="Sateliti.htm">Sateliti</a></li>
+                <li><a href="Gauri%20Negre.htm">Gauri Negre</a></li>
+                <li><a href="Calea%20Lactee.htm">Calea Lactee</a></li>
+
+            </ul>
+        </li>
+<li><a href="#">Planete</a>
+            <ul>
+                <li><a href="mercur.htm">Mercur</a></li>
+                <li><a href="venus.htm">Venus</a></li>
+                <li><a href="pamant.htm">Pamant</a></li>
+                <li><a href="marte.htm">Marte</a></li>
+                <li><a href="jupiter.htm">Jupiter</a></li>
+                <li><a href="saturn.htm">Saturn</a></li>
+                <li><a href="uranus.htm">Uranus</a></li>
+                
+            </ul>
+        </li>
+       <li class="active"><a href="AboutUs.htm"><span id="active">About Us</span></a></li>
+
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+</body>
+<body style="background-image: url('star.jpg');">
+<div class="header">
+  <h1></h1>
+</div>
+<div style="color: #ffffff">
+<br>
+<p style="float: left; clear: left">
+<img src="ura.jpg" style="width:580px;height:350px">
+<h2><ins><i>Uranus</i></ins></h2>
+<p><p style="font-size: 20px;">Uranus este a șaptea planetă de la Soare. Numele său este o referință la zeul grec al cerului, Uranus, care, conform mitologiei grecești, a fost bunicul lui Zeus (Jupiter) și tatăl lui Cronos (Saturn). Este a treia planetă ca mărime și a patra ca masivitate din Sistemul Solar. Uranus are o compoziție similară cu Neptun și ambele au compoziții chimice diferite de cele ale celor mai mari giganți gazoși: Jupiter și Saturn. Din acest motiv, oamenii de știință clasifică adesea Uranus și Neptun ca „giganți de gheață” pentru a-i deosebi de ceilalți giganți gazoși. Atmosfera lui Uranus, deși este similară cu cea a lui Jupiter și a lui Saturn în compoziția sa primară de hidrogen și heliu, conține mai multă „gheață” cum ar fi apă, amoniac și metan, precum și urme de alte hidrocarburi. Are cea mai rece atmosferă planetară din Sistemul Solar, cu o temperatură minimă de 49 K (−224 °C). Uranus are o structură complexă de nori stratificați și se crede că apa formează cei mai mici nori, iar metanul stratul superior de nori. Interiorul lui Uranus este compus în principal din gheață și rocă.</p>
+<p><p style="font-size: 20px;">
+</p>
+<hr>
+<br>
+<p style="float: right; clear: right">
+<img src="ur.jpg" style="width:550px;height:450px">
+       
+<p><h2><ins><i>Nume</i></ins></h2>
+<p><p style="font-size: 20px;">Numele lui Uranus face referire la vechea zeitate greacă a cerului, Uranus (greaca veche: Οὐρανός), tatăl lui Cronos (Saturn) și bunicul lui Zeus (Jupiter), care în latină a devenit Ūranus.
+
+Numele propus de Herschel nu era popular în afara Marii Britanii și în curând au fost propuse alternative. Astronomul Jérôme Lalande a propus ca acesta să fie numit Herschel în onoarea descoperitorului său. Astronomul suedez Erik Prosperin a propus numele de Neptun, care a fost susținut de alți astronomi cărora le-a plăcut ideea de a comemora victoriile flotei navale regale britanice în cursul Războiului revoluționar american numind noua planetă chiar Neptune George III sau Neptune Great Britain.
+
+Într-un tratat din martie 1782, Bode a propus Uranus, versiunea latinizată a zeului grec al cerului, Ouranos. Bode a susținut că numele ar trebui să urmeze mitologia, astfel încât să nu iasă în evidență atât de diferit de celelalte planete și că Uranus era un nume adecvat ca tată al primei generații de titani. El a menționat, de asemenea, că așa cum Saturn a fost tatăl lui Jupiter, noua planetă ar trebui să fie numită după tatăl lui Saturn. În 1789, colegul lui Bode de la Academia Regală, Martin Klaproth și-a numit elementul recent descoperit uraniu în sprijinul alegerii lui Bode. În cele din urmă, sugestia lui Bode a devenit cea mai răspândită și a devenit universală în 1850, când „HM Nautical Almanac Office” a trecut de la utilizarea Georgium Sidus la Uranus.
+
+Uranus are două simboluri astronomice. Primul care a fost propus, ♅, [a] a fost sugerat de Lalande în 1784. Într-o scrisoare către Herschel, Lalande l-a descris ca fiind „un glob acoperit de prima literă a numelui tău”.[32] O propunere ulterioară, ⛢(str)[b] este un hibrid al simbolurilor pentru Marte și Soare deoarece Uranus era Cerul în mitologia greacă, despre care se credea că este dominat de puterile combinate ale Soarelui și a lui Marte.</p>
+<hr>
+<p><h2><ins><i>Orbită și rotație</p></h2></ins></i>
+<p style="font-size: 20px;">
+Uranus finalizează o orbită în jurul Soarelui la fiecare aproximativ 84 de ani tereștri. Distanța sa medie față de Soare este de aproximativ 3 miliarde de kilometri (20 UA). Diferența dintre distanța minimă și maximă față de Soare este de 1,8 UA, mai mare decât cea a oricărei alte planete, deși nu la fel de mare ca cea a planetei pitice Pluto. Intensitatea luminii solare variază invers cu pătratul distanței, așa că pe Uranus (aflată la aproximativ de 20 de ori distanța Pământ-Soare) intensitatea luminii este de aproximativ 1/400 din intensitatea luminii pe Pământ. Elementele sale orbitale au fost calculate pentru prima dată în 1783 de Pierre-Simon Laplace. Cu timpul, au început să apară discrepanțe între orbitele prezise și observate, iar în 1841, John Couch Adams a propus mai întâi că diferențele s-ar putea datora atracției gravitaționale a unei alte planete nevăzute. În 1845, Urbain Le Verrier a început propria sa cercetare independentă asupra orbitei lui Uranus. La 23 septembrie 1846, Johann Gottfried Galle a localizat o nouă planetă, numită mai târziu Neptun, aproape în poziția prezisă de Le Verrier.
+
+Perioada de rotație în jurul propriei axe a lui Uranus este de 17 ore și 14 minute. Ca toți giganții gazoși, atmosfera sa superioară are vânturi puternice în direcția de rotație. La unele latitudini, cum ar fi aproximativ 60 °S, elementele proeminente ale atmosferei se mișcă mult mai repede, făcând o rotație completă în doar 14 ore.
+<hr>
+
+<br>
+<p style="float: left; clear: left">
+<left><img src="ura.jpg" style="width:650px;height:450px"></left>
+<br>
+<h2><ins><i>Informatii Suplimentare</i></ins></h2>
+<p><p style="font-size: 20px;">
+<p style="font-size: 20px;">Masa lui Uranus este de aproximativ 14,5 ori mai mare decât a Pământului, însă este cea mai puțin masivă dintre planetele gigant. Diametrul său este puțin mai mare decât cea a lui Neptun și de aproximativ patru ori mai mare decât a Pământului, rezultând o densitate de 1,27 g/cm3, Uranus fiind astfel a doua planetă ca densitate (după Saturn) din Sistemul Solar. Această valoare indică faptul că este alcătuită în principal din substanțe volatile solidificate, cum ar fi apă, amoniac și metan. Masa totală de gheață din interiorul lui Uranus nu este cunoscută cu precizie deoarece apar valori diferite în funcție de modelul ales; trebuie să fie între 9,3 și 13,5 mase de Pământ. Hidrogenul și heliul constituie doar o mică parte din total, cu 0,5-1,5 mase terestre. Restul masei fără gheață (0,5 până la 3,7 mase terestre) este reprezentat de material stâncos.
+
+Modelul standard al structurii lui Uranus este că planeta este formată din trei straturi: un nucleu stâncos (silicat/fier-nichel) în centru, o manta înghețată în mijloc și un înveliș exterior de hidrogen/heliu gazos. Nucleul este relativ mic, cu o masă de numai 0,55 mase terestre și o rază mai mică de 20% din Uranus; mantaua cuprinde cea mai mare parte a planetei, cu aproximativ 13,4 mase terestre, iar atmosfera superioară este relativ nesubstanțială, cântărind aproximativ 0,5 mase terestre și extinzându-se în ultimii 20% din raza lui Uranus. Densitatea nucleului lui Uranus este de aproximativ 9 g/cm3, cu o presiune în centru de 8 milioane de bari (800 GPa) și o temperatură de aproximativ 5000 K (4.727 °C). Mantaua de gheață nu este de fapt compusă din gheață în sens convențional, ci dintr-un fluid fierbinte și dens format din apă, amoniac și alte substanțe volatile.
+</p>
+</p>
+<br>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .footer {
+            background-color: rgba(51, 51, 51, 0.6); /* Semi-transparent background */
+            color: white;
+            text-align: center;
+            padding: 8px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .footer a {
+            color: #FFD700;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Other content of the website -->
+
+    <footer class="footer">
+        <p>&copy; 2024 All rights reserved by Ilie Alexandru Cristian and Rusu Andrei Samuel.</p>
+            </footer>
+</body>
+</html>

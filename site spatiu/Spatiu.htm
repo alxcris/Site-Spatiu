@@ -1,0 +1,311 @@
+<!doctype html>
+<html>
+<head>
+<title>Sistemul Solar</title>
+<style>
+.header {
+  border: 5px outset lightgray;
+  background-color: gray;    
+  text-align: center;
+background: url("spatiu1.jpg");
+background-repeat:no-repeat;
+width: 100vw; /* Lățimea completă a ecranului */
+height: 400px; /* Poți ajusta înălțimea după preferință */
+background-size: cover; /* Asigură că imaginea acoperă întregul spațiu */
+background-position: center; /* Centrează imaginea */
+
+}
+
+</style>
+</head>
+<!doctype html>
+<html>
+
+<head>
+    <style>
+        #menu-bar {
+          width: 99%;
+          margin: 0px 0px 0px 0px;
+          padding: 6px 6px 4px 6px;
+          height: 40px;
+          line-height: 100%;
+          border-radius: 24px;
+          -webkit-border-radius: 24px;
+          -moz-border-radius: 24px;
+          box-shadow: 2px 2px 3px #666666;
+          -webkit-box-shadow: 2px 2px 3px #666666;
+          -moz-box-shadow: 2px 2px 3px #666666;
+          background: #8B8B8B;
+          background: linear-gradient(top,  #A9A9A9,  #7A7A7A);
+          background: -ms-linear-gradient(top,  #A9A9A9,  #7A7A7A);
+          background: -webkit-gradient(linear, left top, left bottom, from(#A9A9A9), to(#7A7A7A));
+          background: -moz-linear-gradient(top,  #A9A9A9,  #7A7A7A);
+          border: solid 1px #6D6D6D;
+          position:relative;
+          z-index:999;
+        }
+        #menu-bar li {
+          margin: 0px 0px 6px 0px;
+          padding: 0px 6px 0px 6px;
+          float: left;
+          position: relative;
+          list-style: none;
+        }
+        #menu-bar a {
+          font-weight: bold;
+          font-family: arial;
+          font-style: italic;
+          font-size: 24px;
+          color: #E7E5E5;
+          text-decoration: none;
+          display: block;
+          padding: 6px 20px 6px 20px;
+          margin: 0;
+          margin-bottom: 6px;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          text-shadow: 4px 4px 6px #000000;
+        }
+        #menu-bar li ul li a {
+          margin: 0;
+        }
+        #menu-bar .active a, #menu-bar li:hover > a {
+          background: #0399D4;
+          background: linear-gradient(top,  #EBEBEB,  #A1A1A1);
+          background: -ms-linear-gradient(top,  #EBEBEB,  #A1A1A1);
+          background: -webkit-gradient(linear, left top, left bottom, from(#EBEBEB), to(#A1A1A1));
+          background: -moz-linear-gradient(top,  #EBEBEB,  #A1A1A1);
+          color: #444444;
+          -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+          -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+          text-shadow: 2px 2px 3px #FFFFFF;
+        }
+        #menu-bar ul li:hover a, #menu-bar li:hover li a {
+          background: none;
+          border: none;
+          color: #666;
+          -box-shadow: none;
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+        }
+        #menu-bar ul a:hover {
+          background: #0399D4 !important;
+          background: linear-gradient(top,  #04ACEC,  #0186BA) !important;
+          background: -ms-linear-gradient(top,  #04ACEC,  #0186BA) !important;
+          background: -webkit-gradient(linear, left top, left bottom, from(#04ACEC), to(#0186BA)) !important;
+          background: -moz-linear-gradient(top,  #04ACEC,  #0186BA) !important;
+          color: #FFFFFF !important;
+          border-radius: 0;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          text-shadow: 2px 2px 3px #FFFFFF;
+        }
+        #menu-bar li:hover > ul {
+          display: block;
+        }
+        #menu-bar ul {
+          background: #DDDDDD;
+          background: linear-gradient(top,  #FFFFFF,  #CFCFCF);
+          background: -ms-linear-gradient(top,  #FFFFFF,  #CFCFCF);
+          background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#CFCFCF));
+          background: -moz-linear-gradient(top,  #FFFFFF,  #CFCFCF);
+          display: none;
+          margin: 0;
+          padding: 0;
+          width: 185px;
+          position: absolute;
+          top: 30px;
+          left: 0;
+          border: solid 1px #B4B4B4;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -webkit-box-shadow: 2px 2px 3px #222222;
+          -moz-box-shadow: 2px 2px 3px #222222;
+          box-shadow: 2px 2px 3px #222222;
+        }
+        #menu-bar ul li {
+          float: none;
+          margin: 0;
+          padding: 0;
+        }
+        #menu-bar ul a {
+          padding:10px 0px 10px 15px;
+          color:#424242 !important;
+          font-size:12px;
+          font-style:normal;
+          font-family:arial;
+          font-weight: normal;
+          text-shadow: 2px 2px 3px #FFFFFF;
+        }
+        #menu-bar ul li:first-child > a {
+          border-top-left-radius: 10px;
+          -webkit-border-top-left-radius: 10px;
+          -moz-border-radius-topleft: 10px;
+          border-top-right-radius: 10px;
+          -webkit-border-top-right-radius: 10px;
+          -moz-border-radius-topright: 10px;
+        }
+        #menu-bar ul li:last-child > a {
+          border-bottom-left-radius: 10px;
+          -webkit-border-bottom-left-radius: 10px;
+          -moz-border-radius-bottomleft: 10px;
+          border-bottom-right-radius: 10px;
+          -webkit-border-bottom-right-radius: 10px;
+          -moz-border-radius-bottomright: 10px;
+        }
+        #menu-bar:after {
+          content: ".";
+          display: block;
+          clear: both;
+          visibility: hidden;
+          line-height: 0;
+          height: 0;
+        }
+        #menu-bar {
+          display: inline-block;
+        }
+          html[xmlns] #menu-bar {
+          display: block;
+        }
+        * html #menu-bar {
+          height: 1%;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="menu-bar">
+        <li class="active"><a href="Spatiu.htm"><span id="active">Acasa</span></a></li>
+           
+        <li><a href="#">Mai multe informatii</a>
+            <ul>
+                <li><a href="Sateliti.htm">Sateliti</a></li>
+                <li><a href="Gauri%20Negre.htm">Gauri Negre</a></li>
+                <li><a href="Calea%20Lactee.htm">Calea Lactee</a></li>
+
+
+
+            </ul>
+        </li>
+<li><a href="#">Planete</a>
+            <ul>
+                <li><a href="mercur.htm">Mercur</a></li>
+                <li><a href="venus.htm">Venus</a></li>
+                <li><a href="pamant.htm">Pamant</a></li>
+                <li><a href="marte.htm">Marte</a></li>
+                <li><a href="jupiter.htm">Jupiter</a></li>
+                <li><a href="saturn.htm">Saturn</a></li>
+                <li><a href="uranus.htm">Uranus</a></li>
+                
+            </ul>
+        </li>
+        <li class="active"><a href="AboutUs.htm"><span id="active">About Us</span></a></li>
+
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+</body>
+
+</html>
+<body style="background-image: url('negru2.jpg');">
+<div class="header">
+  <h1></h1>
+
+</div>
+<div style="color: #ffffff">
+ 
+
+<h2><p style="font-size: 40px"><ins><i>Sistemul nostru solar (numit si Calea Lactee)</i></ins></h2>
+
+<p><p style="font-size: 20px">Calea Lactee[a], rar cu denumirea Calea Laptelui, iar foarte rar cu denumirea Drumul lui Trăian, este o galaxie spirală barată din care face parte Sistemul Solar. Văzută de pe Pământ, apare ca o bandă strălucitoare și difuză vizibilă pe cerul nopții format din stele, care nu pot fi distinse în mod individual de către ochiul liber. De pe Pământ, Calea Lactee apare ca o bandă, deoarece structura sa în formă de disc este privită din interior. Vârsta sa estimată este mai mare de treisprezece miliarde de ani, perioadă în care a trecut prin mai multe faze evolutive până la atingerea formei sale actuale. Este o galaxie spirală barată cu un diametru între 150.000 și 200.000 de ani-lumină, formată din 100-400 miliarde de stele și peste 100 de miliarde de planete.</p>
+<br>
+<p style="float: left; clear: left">
+<left><img src="solaris2.png"  style="width:700px;height:450px"></left> 
+<br>
+<h2><p style="font-size: 40px"><ins><i>Ordinea planetelor</i></ins></h2>
+<p><p style="font-size: 20px">
+Care sunt planetele sistemului solar?
+<p><p style="font-size: 20px">
+-Mercur;<p><p style="font-size: 20px">
+
+-Venus;<p><p style="font-size: 20px">
+
+-Pământ;<p><p style="font-size: 20px">
+
+-Marte;<p><p style="font-size: 20px">
+
+-Jupiter;<p><p style="font-size: 20px">
+
+-Saturn;<p><p style="font-size: 20px">
+
+-Uranus;<p><p style="font-size: 20px">
+
+-Neptun.
+<p><p style="font-size: 20px">
+
+<hr>
+
+
+<br>
+<p style="float: right; clear: right">
+<right><img src="sun.png"  style="width:500px;height:350px"></right> 
+<br>
+<h2><p style="font-size: 40px"><ins><i>Prezentare generala</i></ins></h2>
+<p><p style="font-size: 20px">
+Sistemul solar (scris și Sistemul Solar) este format din Soare împreună cu sistemul său planetar (care cuprinde opt planete împreună cu sateliții lor naturali) și alte obiecte non-stelare.
+
+În afară de cele opt planete, oamenii de știință au emis ipoteza existenței unei alte planete, denumită provizoriu A noua planetă. Această ipotetică planetă gigantă s-ar afla la marginea Sistemului Solar. Existența planetei ar explica configurarea orbitală neobișnuită a unui grup de obiecte transneptuniene (OTN). La 20 ianuarie 2016, cercetătorii Konstantin Batygin și Michael E. Brown de la Institutul de Tehnologie din California au anunțat că există dovezi suplimentare indirecte privind existența unei a noua planete dincolo de orbita planetei Neptun. Aceasta ar orbita în jurul Soarelui între 10.000 și 20.000 de ani. Conform studiului publicat în Astronomical Journal, „Planeta Nouă” ar avea o masă de aproximativ 10 ori mai mare decât Terra și s-ar afla la minim 200 UA.
+
+Sistemul este situat într-unul dintre brațele exterioare ale galaxiei Calea Lactee (mai precis în Brațul Orion), galaxie care are cca. 200 de miliarde de stele.
+<p><p style="font-size: 20px">
+El s-a format acum 4,6 miliarde de ani, ca urmare a colapsului gravitațional al unui gigant nor molecular. Cel mai masiv obiect este steaua centrală - Soarele, al doilea obiect ca masă fiind planeta Jupiter. Cele patru planete interioare mici, Mercur, Venus, Pământul și Marte, numite planete terestre / planete telurice, sunt compuse în principal din roci și metal. Cele patru planete exterioare, numite giganți gazoși, sunt mult mai masive decât cele telurice. Cele mai mari două planete, Jupiter și Saturn, sunt compuse în principal din hidrogen și heliu; cele două planete mai îndepărtate, Uranus și Neptun, sunt compuse în mare parte din substanțe cu o temperatură de topire relativ ridicată (comparativ cu hidrogenul și heliu), numite ghețuri, cum ar fi apa, amoniacul și metanul. Ele sunt denumite „giganți de gheață” (termen distinct de cel de „gigant gazos”). Toate planetele au orbite aproape circulare dispuse într-un disc aproape plat numit plan ecliptic.
+
+Sistemul solar prezintă câteva regiuni unde se află diferite obiecte mici. Centura de asteroizi, situată între Marte și Jupiter, este similară din punct de vedere al compoziției cu planetele terestre, deoarece o mare parte dintre obiecte sunt compuse din rocă și metal. Dincolo de orbita lui Neptun se află centura Kuiper și discul împrăștiat; multe dintre obiectele transneptuniene sunt în mare parte compuse din ghețuri. Printre aceste obiecte, de la câteva zeci până la mai mult de zece mii de obiecte pot fi suficient de mari pentru a fi fost rotunjite de propria gravitație. Astfel de obiecte sunt denumite planete pitice. Planetele pitice identificate până în prezent includ asteroidul Ceres și obiectele transneptuniene: Pluto, Eris, Haumea și Makemake. În plus, în aceste două regiuni se află diferite alte corpuri mici, cum ar fi comete, centauri și materie interplanetară. Șase planete, cel puțin trei planete pitice și multe alte corpuri mici au sateliți naturali care se rotesc în jurul lor. Fiecare planetă exterioară este înconjurată de inele planetare alcătuite din praf și alte obiecte mici.
+</p>
+<p style="font-size: 40px"><ins><i>Pentru mai multe detalii accesati bara de meniuri de deasupra bannerului.</i></ins>
+</div>
+
+<br>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .footer {
+            background-color: rgba(51, 51, 51, 0.6); /* Semi-transparent background */
+            color: white;
+            text-align: center;
+            padding: 8px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .footer a {
+            color: #FFD700;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Other content of the website -->
+
+    <footer class="footer">
+        <p>&copy; 2024 All rights reserved by Ilie Alexandru Cristian and Rusu Andrei Samuel.</p>
+            </footer>
+</body>
+</html>

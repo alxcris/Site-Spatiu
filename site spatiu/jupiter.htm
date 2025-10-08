@@ -1,0 +1,299 @@
+<!doctype html>
+<html>
+<head>
+<title>Jupiter</title>
+<style>
+.header {
+  border: 5px outset lightgray;
+  background-color: gray;    
+  text-align: center;
+background: url("jupit.jpg");
+background-repeat:no-repeat;
+width: 100vw; /* Lățimea completă a ecranului */
+height: 400px; /* Poți ajusta înălțimea după preferință */
+background-size: cover; /* Asigură că imaginea acoperă întregul spațiu */
+background-position: center; /* Centrează imaginea */
+
+}
+
+</style>
+</head>
+<!doctype html>
+<html>
+
+<head>
+    <style>
+        #menu-bar {
+          width: 99%;
+          margin: 0px 0px 0px 0px;
+          padding: 6px 6px 4px 6px;
+          height: 40px;
+          line-height: 100%;
+          border-radius: 24px;
+          -webkit-border-radius: 24px;
+          -moz-border-radius: 24px;
+          box-shadow: 2px 2px 3px #666666;
+          -webkit-box-shadow: 2px 2px 3px #666666;
+          -moz-box-shadow: 2px 2px 3px #666666;
+          background: #8B8B8B;
+          background: linear-gradient(top,  #A9A9A9,  #7A7A7A);
+          background: -ms-linear-gradient(top,  #A9A9A9,  #7A7A7A);
+          background: -webkit-gradient(linear, left top, left bottom, from(#A9A9A9), to(#7A7A7A));
+          background: -moz-linear-gradient(top,  #A9A9A9,  #7A7A7A);
+          border: solid 1px #6D6D6D;
+          position:relative;
+          z-index:999;
+        }
+        #menu-bar li {
+          margin: 0px 0px 6px 0px;
+          padding: 0px 6px 0px 6px;
+          float: left;
+          position: relative;
+          list-style: none;
+        }
+        #menu-bar a {
+          font-weight: bold;
+          font-family: arial;
+          font-style: italic;
+          font-size: 24px;
+          color: #E7E5E5;
+          text-decoration: none;
+          display: block;
+          padding: 6px 20px 6px 20px;
+          margin: 0;
+          margin-bottom: 6px;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          text-shadow: 4px 4px 6px #000000;
+        }
+        #menu-bar li ul li a {
+          margin: 0;
+        }
+        #menu-bar .active a, #menu-bar li:hover > a {
+          background: #0399D4;
+          background: linear-gradient(top,  #EBEBEB,  #A1A1A1);
+          background: -ms-linear-gradient(top,  #EBEBEB,  #A1A1A1);
+          background: -webkit-gradient(linear, left top, left bottom, from(#EBEBEB), to(#A1A1A1));
+          background: -moz-linear-gradient(top,  #EBEBEB,  #A1A1A1);
+          color: #444444;
+          -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+          -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+          text-shadow: 2px 2px 3px #FFFFFF;
+        }
+        #menu-bar ul li:hover a, #menu-bar li:hover li a {
+          background: none;
+          border: none;
+          color: #666;
+          -box-shadow: none;
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+        }
+        #menu-bar ul a:hover {
+          background: #0399D4 !important;
+          background: linear-gradient(top,  #04ACEC,  #0186BA) !important;
+          background: -ms-linear-gradient(top,  #04ACEC,  #0186BA) !important;
+          background: -webkit-gradient(linear, left top, left bottom, from(#04ACEC), to(#0186BA)) !important;
+          background: -moz-linear-gradient(top,  #04ACEC,  #0186BA) !important;
+          color: #FFFFFF !important;
+          border-radius: 0;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          text-shadow: 2px 2px 3px #FFFFFF;
+        }
+        #menu-bar li:hover > ul {
+          display: block;
+        }
+        #menu-bar ul {
+          background: #DDDDDD;
+          background: linear-gradient(top,  #FFFFFF,  #CFCFCF);
+          background: -ms-linear-gradient(top,  #FFFFFF,  #CFCFCF);
+          background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#CFCFCF));
+          background: -moz-linear-gradient(top,  #FFFFFF,  #CFCFCF);
+          display: none;
+          margin: 0;
+          padding: 0;
+          width: 185px;
+          position: absolute;
+          top: 30px;
+          left: 0;
+          border: solid 1px #B4B4B4;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -webkit-box-shadow: 2px 2px 3px #222222;
+          -moz-box-shadow: 2px 2px 3px #222222;
+          box-shadow: 2px 2px 3px #222222;
+        }
+        #menu-bar ul li {
+          float: none;
+          margin: 0;
+          padding: 0;
+        }
+        #menu-bar ul a {
+          padding:10px 0px 10px 15px;
+          color:#424242 !important;
+          font-size:12px;
+          font-style:normal;
+          font-family:arial;
+          font-weight: normal;
+          text-shadow: 2px 2px 3px #FFFFFF;
+        }
+        #menu-bar ul li:first-child > a {
+          border-top-left-radius: 10px;
+          -webkit-border-top-left-radius: 10px;
+          -moz-border-radius-topleft: 10px;
+          border-top-right-radius: 10px;
+          -webkit-border-top-right-radius: 10px;
+          -moz-border-radius-topright: 10px;
+        }
+        #menu-bar ul li:last-child > a {
+          border-bottom-left-radius: 10px;
+          -webkit-border-bottom-left-radius: 10px;
+          -moz-border-radius-bottomleft: 10px;
+          border-bottom-right-radius: 10px;
+          -webkit-border-bottom-right-radius: 10px;
+          -moz-border-radius-bottomright: 10px;
+        }
+        #menu-bar:after {
+          content: ".";
+          display: block;
+          clear: both;
+          visibility: hidden;
+          line-height: 0;
+          height: 0;
+        }
+        #menu-bar {
+          display: inline-block;
+        }
+          html[xmlns] #menu-bar {
+          display: block;
+        }
+        * html #menu-bar {
+          height: 1%;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="menu-bar">
+        <li class="active"><a href="Spatiu.htm"><span id="active">Acasa</span></a></li>
+           
+        <li><a href="#">Mai multe informatii</a>
+            <ul>
+                <li><a href="Sateliti.htm">Sateliti</a></li>
+                <li><a href="Gauri%20Negre.htm">Gauri Negre</a></li>
+                <li><a href="Calea%20Lactee.htm">Calea Lactee</a></li>
+
+
+
+            </ul>
+        </li>
+<li><a href="#">Planete</a>
+            <ul>
+                <li><a href="mercur.htm">Mercur</a></li>
+                <li><a href="venus.htm">Venus</a></li>
+                <li><a href="pamant.htm">Pamant</a></li>
+                <li><a href="marte.htm">Marte</a></li>
+                <li><a href="jupiter.htm">Jupiter</a></li>
+                <li><a href="saturn.htm">Saturn</a></li>
+                <li><a href="uranus.htm">Uranus</a></li>
+               
+            </ul>
+        </li>
+        <li class="active"><a href="AboutUs.htm"><span id="active">About Us</span></a></li>
+
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+</body>
+
+</html>
+<body style="background-image: url('negru2.jpg');">
+<div class="header">
+  <h1></h1>
+
+</div>
+<div style="color: #ffffff">
+ 
+
+<h2><p style="font-size: 30px"><ins><i>Jupiter</i></ins></h2>
+
+<p><p style="font-size: 20px">Jupiter este a cincea planetă de la Soare și cea mai mare din Sistemul Solar. Este un gigant gazos cu o masă de o miime din cea a Soarelui, dar de două ori și jumătate decât masa totală a tuturor celorlalte planete din Sistemul Solar.
+
+Jupiter este unul dintre cele mai strălucitoare obiecte vizibile cu ochiul liber pe cerul nopții și a fost cunoscut civilizațiilor antice încă de pe vremea istoriei înregistrate. Este numit după zeul roman Jupiter. Când este privit de pe Pământ, Jupiter poate fi suficient de luminos pentru ca lumina sa reflectată să arunce umbre, și este în medie cel de-al treilea obiect natural ca strălucire pe cerul nopții după Lună și Venus.
+
+Jupiter este formată din trei sferturi de hidrogen și un sfert din heliu. Poate avea un nucleu stâncos din elemente mai grele, dar la fel ca celelalte planete gigante, lui Jupiter îi lipsește o suprafață solidă bine definită. Datorită rotației sale rapide, forma planetei este cea a unui elipsoid de rotație (mai turtit la poli și mai bombat la ecuator). Atmosfera exterioară este vizibil segregată în mai multe benzi la latitudini diferite, rezultând turbulențe și furtuni de-a lungul granițelor lor de interacțiune. Cel mai cunoscut detaliu al suprafeței sale este Marea Pată Roșie descoperită în secolul al XVII-lea cu un telescop, care este un anticiclon cu diametrul mai mare decât diametrul Pământului. Planeta are inele greu vizibile și o magnetosferă puternică. Jupiter are 95 de sateliți cunoscuți, printre care se numără cei patru sateliți galileeni descoperiți de Galileo Galilei în 1610. Ganymede, cel mai mare dintre aceștia, are un diametru mai mare decât planeta Mercur.</p>
+<br>
+<p style="float: left; clear: left">
+<left><img src="jpy.jpg"  style="width:500px;height:350px"></left> 
+<br>
+
+<br>
+<p style="float: left; clear: left">
+ 
+<br>
+<h2><p style="font-size: 40px"><ins><i>Structura</i></ins></h2>
+<p><p style="font-size: 20px">
+Jupiter este compus în principal din materii gazoase și lichide. Este cea mai mare planetă din Sistemul Solar, cu un diametru ecuatorial de 142.984 km. Densitatea medie a lui Jupiter, 1.326 g/cm3, este a doua densitate ca mărime printre planetele gigantice, dar mai mică decât densitatea celor patru planete telurice.Masa lui Jupiter este de 2,5 ori mai mare decât masa totală a tuturor celorlalte planete din Sistemul Solar. Este atât de masivă încât baricentrul său cu Soarele (punctul în jurul căruia cele două corpuri se rotesc, centrul de greutate al sistemului) este situat deasupra suprafeței solare, la 1,068 raze solare de centrul astrului. Diametrul lui Jupiter este de 11 ori mai mare decât Pământul, dar are o densitate mult mai mică. Volumul lui Jupiter este de 1,321 de ori mai mare decât volumul Pământului, iar masa sa de 318 ori mai mare decât masa Pământului. Raza lui Jupiter este de aproximativ 1/10 din raza Soarelui, iar masa sa este de 0,001 ori mai mare decât a Soarelui, deci densitățile celor două corpuri sunt similare. O „masă Jupiter” (MJ sau MJUP) este adesea folosită ca unitate pentru determinarea masei altor obiecte, în special a planetelor extrasolare și a piticelor cenușii. De exemplu, planeta HD 209458 b are o masă de 0,69 MJ, în timp ce Kappa Andromedae b are o masă de 12,8 MJ.</p>
+
+
+<br>
+<p style="float: right; clear: right">
+<right><img src="jp.jpg"  style="width:500px;height:350px"></right> 
+<br>
+<h2><p style="font-size: 40px"><ins><i>Suprafața</i></ins></h2>
+<p><p style="font-size: 20px">
+Se crede că Jupiter este format dintr-un nucleu dens care conține diverse elemente, înconjurat de un strat de hidrogen metalic lichid cu adăugare de heliu, care se extinde spre exterior la aproximativ 78% din raza planetei, și un strat exterior care constă în principal din hidrogen molecular. În afară de acest contur general, structura interioară nu este cunoscută. Misiunea Juno, care a ajuns în iulie 2016, a descoperit că Jupiter are un miez foarte difuz, amestecat în manta. O posibilă cauză este un impact cu o planetă de aproximativ zece mase de Pământ la câteva milioane de ani după formarea lui Jupiter, care ar fi perturbat un nucleu jovian inițial solid.
+
+Deasupra stratului de hidrogen metalic se află o atmosferă interioară transparentă de hidrogen. La această adâncime, presiunea este deasupra presiunii critice a hidrogenului de 1,2858 MPa și temperatura deasupra temperaturii critice de numai 32,938 K. În această stare, nu există o limită clară între diferite faze de hidrogen (lichid, gazos) - se spune că hidrogenul se află într-o stare fluidă supercritică. Este convenabil să tratăm hidrogenul drept gazul care se extinde în jos de la stratul de nor până la o adâncime de aproximativ 1.000 km, și ca lichid în straturi mai adânci. Fizic, nu există o graniță clară - gazul devine mai cald și mai dens pe măsură ce coboară. Picăturile sub formă de ploaie de heliu și neon se precipită în jos prin atmosfera inferioară, epuizând abundența acestor elemente în atmosfera superioară.
+
+Conform mecanismului Kelvin-Helmholtz, temperatura și presiunea din Jupiter cresc constant. La nivelul presiunii de 10 bari (1 MPa), temperatura este în jur de 340 K (67 °C). În regiunea fază de tranziție în care hidrogenul - încălzit dincolo de punctul său critic - devine metalic, se calculează că temperatura este de 10.000 K (9.700 °C), iar presiunea este de 200 GPa. Temperatura la limita nucleului este estimată la 36.000 K (35.700 °C), iar presiunea interioară este de aproximativ 3.000-4.500 GPa.
+
+
+
+</i></ins>
+</div>
+
+<br>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .footer {
+            background-color: rgba(51, 51, 51, 0.6); /* Semi-transparent background */
+            color: white;
+            text-align: center;
+            padding: 8px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .footer a {
+            color: #FFD700;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Other content of the website -->
+
+    <footer class="footer">
+        <p>&copy; 2024.All rights reserved by Ilie Alexandru Cristian and Rusu Andrei Samuel.</p>
+            </footer>
+</body>
+</html>

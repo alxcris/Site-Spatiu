@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+<head>
+<title>Saturn</title>
+<style>
+.header {
+  border: 5px outset lightgray;
+  background-color: gray;    
+  text-align: center;
+background: url("Saturn.jpg");
+background-repeat:no-repeat;
+width: 100vw; /* Lățimea completă a ecranului */
+height: 400px; /* Poți ajusta înălțimea după preferință */
+background-size: cover; /* Asigură că imaginea acoperă întregul spațiu */
+background-position: center; /* Centrează imaginea */
+
+}
+
+</style>
+</head>
+<!doctype html>
+<html>
+
+<head>
+    <style>
+        #menu-bar {
+          width: 99%;
+          margin: 0px 0px 0px 0px;
+          padding: 6px 6px 4px 6px;
+          height: 40px;
+          line-height: 100%;
+          border-radius: 24px;
+          -webkit-border-radius: 24px;
+          -moz-border-radius: 24px;
+          box-shadow: 2px 2px 3px #666666;
+          -webkit-box-shadow: 2px 2px 3px #666666;
+          -moz-box-shadow: 2px 2px 3px #666666;
+          background: #8B8B8B;
+          background: linear-gradient(top,  #A9A9A9,  #7A7A7A);
+          background: -ms-linear-gradient(top,  #A9A9A9,  #7A7A7A);
+          background: -webkit-gradient(linear, left top, left bottom, from(#A9A9A9), to(#7A7A7A));
+          background: -moz-linear-gradient(top,  #A9A9A9,  #7A7A7A);
+          border: solid 1px #6D6D6D;
+          position:relative;
+          z-index:999;
+        }
+        #menu-bar li {
+          margin: 0px 0px 6px 0px;
+          padding: 0px 6px 0px 6px;
+          float: left;
+          position: relative;
+          list-style: none;
+        }
+        #menu-bar a {
+          font-weight: bold;
+          font-family: arial;
+          font-style: italic;
+          font-size: 24px;
+          color: #E7E5E5;
+          text-decoration: none;
+          display: block;
+          padding: 6px 20px 6px 20px;
+          margin: 0;
+          margin-bottom: 6px;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          text-shadow: 4px 4px 6px #000000;
+        }
+        #menu-bar li ul li a {
+          margin: 0;
+        }
+        #menu-bar .active a, #menu-bar li:hover > a {
+          background: #0399D4;
+          background: linear-gradient(top,  #EBEBEB,  #A1A1A1);
+          background: -ms-linear-gradient(top,  #EBEBEB,  #A1A1A1);
+          background: -webkit-gradient(linear, left top, left bottom, from(#EBEBEB), to(#A1A1A1));
+          background: -moz-linear-gradient(top,  #EBEBEB,  #A1A1A1);
+          color: #444444;
+          -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+          -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+          text-shadow: 2px 2px 3px #FFFFFF;
+        }
+        #menu-bar ul li:hover a, #menu-bar li:hover li a {
+          background: none;
+          border: none;
+          color: #666;
+          -box-shadow: none;
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+        }
+        #menu-bar ul a:hover {
+          background: #0399D4 !important;
+          background: linear-gradient(top,  #04ACEC,  #0186BA) !important;
+          background: -ms-linear-gradient(top,  #04ACEC,  #0186BA) !important;
+          background: -webkit-gradient(linear, left top, left bottom, from(#04ACEC), to(#0186BA)) !important;
+          background: -moz-linear-gradient(top,  #04ACEC,  #0186BA) !important;
+          color: #FFFFFF !important;
+          border-radius: 0;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          text-shadow: 2px 2px 3px #FFFFFF;
+        }
+        #menu-bar li:hover > ul {
+          display: block;
+        }
+        #menu-bar ul {
+          background: #DDDDDD;
+          background: linear-gradient(top,  #FFFFFF,  #CFCFCF);
+          background: -ms-linear-gradient(top,  #FFFFFF,  #CFCFCF);
+          background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#CFCFCF));
+          background: -moz-linear-gradient(top,  #FFFFFF,  #CFCFCF);
+          display: none;
+          margin: 0;
+          padding: 0;
+          width: 185px;
+          position: absolute;
+          top: 30px;
+          left: 0;
+          border: solid 1px #B4B4B4;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -webkit-box-shadow: 2px 2px 3px #222222;
+          -moz-box-shadow: 2px 2px 3px #222222;
+          box-shadow: 2px 2px 3px #222222;
+        }
+        #menu-bar ul li {
+          float: none;
+          margin: 0;
+          padding: 0;
+        }
+        #menu-bar ul a {
+          padding:10px 0px 10px 15px;
+          color:#424242 !important;
+          font-size:12px;
+          font-style:normal;
+          font-family:arial;
+          font-weight: normal;
+          text-shadow: 2px 2px 3px #FFFFFF;
+        }
+        #menu-bar ul li:first-child > a {
+          border-top-left-radius: 10px;
+          -webkit-border-top-left-radius: 10px;
+          -moz-border-radius-topleft: 10px;
+          border-top-right-radius: 10px;
+          -webkit-border-top-right-radius: 10px;
+          -moz-border-radius-topright: 10px;
+        }
+        #menu-bar ul li:last-child > a {
+          border-bottom-left-radius: 10px;
+          -webkit-border-bottom-left-radius: 10px;
+          -moz-border-radius-bottomleft: 10px;
+          border-bottom-right-radius: 10px;
+          -webkit-border-bottom-right-radius: 10px;
+          -moz-border-radius-bottomright: 10px;
+        }
+        #menu-bar:after {
+          content: ".";
+          display: block;
+          clear: both;
+          visibility: hidden;
+          line-height: 0;
+          height: 0;
+        }
+        #menu-bar {
+          display: inline-block;
+        }
+          html[xmlns] #menu-bar {
+          display: block;
+        }
+        * html #menu-bar {
+          height: 1%;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="menu-bar">
+        <li class="active"><a href="Spatiu.htm"><span id="active">Acasa</span></a></li>
+           
+        <li><a href="#">Mai multe informatii</a>
+            <ul>
+                <li><a href="Sateliti.htm">Sateliti</a></li>
+                <li><a href="Gauri%20Negre.htm">Gauri Negre</a></li>
+                <li><a href="Calea%20Lactee.htm">Calea Lactee</a></li>
+
+
+
+            </ul>
+        </li>
+<li><a href="#">Planete</a>
+            <ul>
+                <li><a href="mercur.htm">Mercur</a></li>
+                <li><a href="venus.htm">Venus</a></li>
+                <li><a href="pamant.htm">Pamant</a></li>
+                <li><a href="marte.htm">Marte</a></li>
+                <li><a href="jupiter.htm">Jupiter</a></li>
+                <li><a href="saturn.htm">Saturn</a></li>
+                <li><a href="uranus.htm">Uranus</a></li>
+                
+            </ul>
+        </li>
+        <li class="active"><a href="AboutUs.htm"><span id="active">About Us</span></a></li>
+
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+</body>
+
+</html>
+<body style="background-image: url('negru2.jpg');">
+<div class="header">
+  <h1></h1>
+
+</div>
+<div style="color: #ffffff">
+ 
+
+<h2><p style="font-size: 40px"><ins><i>Saturn</i></ins></h2>
+
+<p><p style="font-size: 20px">Saturn este a șasea planetă de la Soare și a doua ca mărime din Sistemul Solar, după Jupiter. Fiind al doilea obiect nonstelar ca mărime din Sistemul Solar, după Jupiter, este aproape de 95 de ori mai masiv decât Pământul și are de 700 de ori volumul acestuia. Este un gigant gazos cu o rază medie de aproximativ nouă ori mai mare decât cea a Pământului. Deși densitatea sa este de doar o optime din densitatea medie a Pământului, datorită volumului său mare, masa lui Saturn este de 95 de ori mai mare decât cea a Pământului. Numele derivă de la zeul omonim al mitologiei romane, omologul titanul Cronos, din mitologia greacă; simbolul său astronomic (♄) este o reprezentare stilizată a secerei zeului agriculturii.</p>
+<br>
+<p style="float: left; clear: left">
+<right><img src="inele.jpg"  style="width:700px;height:450px"></right> 
+<br>
+<h2><p style="font-size: 40px"><ins><i>Despre inelele sale</i></ins></h2>
+<p><p style="font-size: 20px">
+<p><p style="font-size: 20px">
+Cea mai faimoasă trăsătură a planetei este sistemul său inelar proeminent, care este compus în mare parte din particule de gheață, cu o cantitate mai mică de resturi stâncoase și praf. S-a confirmat descoperirea a 83 de sateliți care orbitează planeta, dintre care 53 au nume oficiale. Titan, cel mai mare satelit a lui Saturn și al doilea ca mărime din Sistemul Solar, este mai mare decât planeta Mercur, deși mai puțin masiv și este singurul satelit din Sistemul Solar care are o atmosferă substanțială.
+
+Văzut de pe Pământ, Saturn pare a fi o stea strălucitoare pe cer, ușor vizibilă cu ochiul liber. Abia după inventarea telescopului, însă, i-au fost descoperite inelele și sateliții. Deși calitatea instrumentelor de observare a evoluat, trimiterea sondelor spațiale a dezvăluit detalii fără precedent. Sondele Pioneer 11, Voyager 1 și Voyager 2 au trecut aproape de Saturn, dar complexitatea descoperirilor lor a motivat trimiterea unui orbitator, Cassini, care a trimis sonda Huygens pe suprafața lui Titan.<p><p style="font-size: 20px">
+
+<hr>
+
+
+<br>
+<p style="float: right; clear: right">
+<left><img src="inele2.jpg"  style="width:500px;height:350px"></left> 
+<br>
+<h2><p style="font-size: 40px"><ins><i>Prezentare generala</i></ins></h2>
+<p><p style="font-size: 20px">
+Saturn este un gigant gazos, deoarece este compus în principal din hidrogen și heliu. Îi lipsește o suprafață definită, deși poate avea un nucleu solid. Saturn este aplatizat la poli și bombat la ecuator din cauza densității sale reduse, a rotației rapide și a stării fluide a materialului său. Razele sale ecuatoriale și polare diferă cu aproape 10 %: 60.268 km față de 54.364 km. Jupiter, Uranus și Neptun, celelalte planete gigant din Sistemul Solar, au de asemenea o formă aplatizată la poli și bombată la ecuator, dar într-o măsură mai mică.
+
+Saturn este singura planetă a Sistemului Solar care este mai puțin densă decât apa — cu aproximativ 30 % mai puțin. Deși nucleul lui Saturn este considerabil mai dens decât apa, densitatea medie specifică a planetei este de 0,69 g/cm3 datorită atmosferei. Jupiter are de 318 ori masa Pământului, iar Saturn are de 95 de ori masa Pământului. Împreună, Jupiter și Saturn dețin 92 % din masa planetară totală din Sistemul Solar.
+Atmosfera exterioară a lui Saturn conține 96,3 % hidrogen molecular și 3,25 % heliu. Proporția de heliu este semnificativ deficitară în comparație cu abundența acestui element în Soare. Cantitatea de elemente mai grele decât heliul (metalicitatea) nu este cunoscută cu precizie, dar se presupune că proporțiile corespund abundențelor primordiale de la formarea Sistemului Solar. Se estimează că masa totală a acestor elemente mai grele este de 19-31 de ori mai mare decât masa Pământului, cu o fracțiune semnificativă situată în regiunea nucleului planetar.
+
+Urme de amoniac, acetilenă, etan, propan, fosfină și metan au fost detectate în atmosfera lui Saturn. Norii superiori sunt compuși din cristale de amoniac, care îi conferă aspectul tipic gălbui, în timp ce norii de nivel inferior par să fie compuși din hidrosulfură de amoniu (NH4SH) sau apă. Radiațiile ultraviolete de la Soare determină fotoliza metanului în atmosfera superioară, ducând la o serie de reacții chimice ale hidrocarburilor, produsele rezultate fiind transportate în jos de vârtejuri atmosferice. Acest ciclu fotochimic este modulat de ciclul sezonier anual al lui Saturn.</p>
+<p style="font-size: 40px"><ins><i>Pentru mai multe detalii accesati bara de meniuri de deasupra bannerului.</i></ins>
+</div>
+
+<br>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .footer {
+            background-color: rgba(51, 51, 51, 0.6); /* Semi-transparent background */
+            color: white;
+            text-align: center;
+            padding: 8px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .footer a {
+            color: #FFD700;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Other content of the website -->
+
+    <footer class="footer">
+        <p>&copy; 2024 All rights reserved by Ilie Alexandru Cristian and Rusu Andrei Samuel.</p>
+            </footer>
+</body>
+</html>

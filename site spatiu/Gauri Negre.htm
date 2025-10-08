@@ -1,0 +1,308 @@
+<!doctype html>
+<html>
+<head>
+<title>Sistemul Solar</title>
+<style>
+.header {
+  border: 5px outset lightgray;
+  background-color: gray;    
+  text-align: center;
+background: url("blackhol.jpg");
+background-repeat:no-repeat;
+width: 100vw; /* Lățimea completă a ecranului */
+height: 400px; /* Poți ajusta înălțimea după preferință */
+background-size: cover; /* Asigură că imaginea acoperă întregul spațiu */
+background-position: center; /* Centrează imaginea */
+
+}
+
+</style>
+</head>
+<!doctype html>
+<html>
+
+<head>
+    <style>
+        #menu-bar {
+          width: 99%;
+          margin: 0px 0px 0px 0px;
+          padding: 6px 6px 4px 6px;
+          height: 40px;
+          line-height: 100%;
+          border-radius: 24px;
+          -webkit-border-radius: 24px;
+          -moz-border-radius: 24px;
+          box-shadow: 2px 2px 3px #666666;
+          -webkit-box-shadow: 2px 2px 3px #666666;
+          -moz-box-shadow: 2px 2px 3px #666666;
+          background: #8B8B8B;
+          background: linear-gradient(top,  #A9A9A9,  #7A7A7A);
+          background: -ms-linear-gradient(top,  #A9A9A9,  #7A7A7A);
+          background: -webkit-gradient(linear, left top, left bottom, from(#A9A9A9), to(#7A7A7A));
+          background: -moz-linear-gradient(top,  #A9A9A9,  #7A7A7A);
+          border: solid 1px #6D6D6D;
+          position:relative;
+          z-index:999;
+        }
+        #menu-bar li {
+          margin: 0px 0px 6px 0px;
+          padding: 0px 6px 0px 6px;
+          float: left;
+          position: relative;
+          list-style: none;
+        }
+        #menu-bar a {
+          font-weight: bold;
+          font-family: arial;
+          font-style: italic;
+          font-size: 24px;
+          color: #E7E5E5;
+          text-decoration: none;
+          display: block;
+          padding: 6px 20px 6px 20px;
+          margin: 0;
+          margin-bottom: 6px;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          text-shadow: 4px 4px 6px #000000;
+        }
+        #menu-bar li ul li a {
+          margin: 0;
+        }
+        #menu-bar .active a, #menu-bar li:hover > a {
+          background: #0399D4;
+          background: linear-gradient(top,  #EBEBEB,  #A1A1A1);
+          background: -ms-linear-gradient(top,  #EBEBEB,  #A1A1A1);
+          background: -webkit-gradient(linear, left top, left bottom, from(#EBEBEB), to(#A1A1A1));
+          background: -moz-linear-gradient(top,  #EBEBEB,  #A1A1A1);
+          color: #444444;
+          -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+          -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+          text-shadow: 2px 2px 3px #FFFFFF;
+        }
+        #menu-bar ul li:hover a, #menu-bar li:hover li a {
+          background: none;
+          border: none;
+          color: #666;
+          -box-shadow: none;
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+        }
+        #menu-bar ul a:hover {
+          background: #0399D4 !important;
+          background: linear-gradient(top,  #04ACEC,  #0186BA) !important;
+          background: -ms-linear-gradient(top,  #04ACEC,  #0186BA) !important;
+          background: -webkit-gradient(linear, left top, left bottom, from(#04ACEC), to(#0186BA)) !important;
+          background: -moz-linear-gradient(top,  #04ACEC,  #0186BA) !important;
+          color: #FFFFFF !important;
+          border-radius: 0;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          text-shadow: 2px 2px 3px #FFFFFF;
+        }
+        #menu-bar li:hover > ul {
+          display: block;
+        }
+        #menu-bar ul {
+          background: #DDDDDD;
+          background: linear-gradient(top,  #FFFFFF,  #CFCFCF);
+          background: -ms-linear-gradient(top,  #FFFFFF,  #CFCFCF);
+          background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#CFCFCF));
+          background: -moz-linear-gradient(top,  #FFFFFF,  #CFCFCF);
+          display: none;
+          margin: 0;
+          padding: 0;
+          width: 185px;
+          position: absolute;
+          top: 30px;
+          left: 0;
+          border: solid 1px #B4B4B4;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -webkit-box-shadow: 2px 2px 3px #222222;
+          -moz-box-shadow: 2px 2px 3px #222222;
+          box-shadow: 2px 2px 3px #222222;
+        }
+        #menu-bar ul li {
+          float: none;
+          margin: 0;
+          padding: 0;
+        }
+        #menu-bar ul a {
+          padding:10px 0px 10px 15px;
+          color:#424242 !important;
+          font-size:12px;
+          font-style:normal;
+          font-family:arial;
+          font-weight: normal;
+          text-shadow: 2px 2px 3px #FFFFFF;
+        }
+        #menu-bar ul li:first-child > a {
+          border-top-left-radius: 10px;
+          -webkit-border-top-left-radius: 10px;
+          -moz-border-radius-topleft: 10px;
+          border-top-right-radius: 10px;
+          -webkit-border-top-right-radius: 10px;
+          -moz-border-radius-topright: 10px;
+        }
+        #menu-bar ul li:last-child > a {
+          border-bottom-left-radius: 10px;
+          -webkit-border-bottom-left-radius: 10px;
+          -moz-border-radius-bottomleft: 10px;
+          border-bottom-right-radius: 10px;
+          -webkit-border-bottom-right-radius: 10px;
+          -moz-border-radius-bottomright: 10px;
+        }
+        #menu-bar:after {
+          content: ".";
+          display: block;
+          clear: both;
+          visibility: hidden;
+          line-height: 0;
+          height: 0;
+        }
+        #menu-bar {
+          display: inline-block;
+        }
+          html[xmlns] #menu-bar {
+          display: block;
+        }
+        * html #menu-bar {
+          height: 1%;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="menu-bar">
+        <li class="active"><a href="Spatiu.htm"><span id="active">Acasa</span></a></li>
+       
+        <li><a href="#">Mai multe informatii</a>
+            <ul>
+                <li><a href="Sateliti.htm">Sateliti</a></li>
+                <li><a href="Gauri%20Negre.htm">Gauri Negre</a></li>
+               <li><a href="Calea%20Lactee.htm">Calea Lactee</a></li>
+
+
+
+            </ul>
+        </li>
+<li><a href="#">Planete</a>
+            <ul>
+                <li><a href="mercur.htm">Mercur</a></li>
+                <li><a href="venus.htm">Venus</a></li>
+                <li><a href="pamant.htm">Pamant</a></li>
+                <li><a href="marte.htm">Marte</a></li>
+                <li><a href="jupiter.htm">Jupiter</a></li>
+                <li><a href="saturn.htm">Saturn</a></li>
+                <li><a href="uranus.htm">Uranus</a></li>
+                
+
+            </ul>
+        </li>
+       <li class="active"><a href="AboutUs.htm"><span id="active">About Us</span></a></li>
+
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+</body>
+
+</html>
+<body style="background-image: url('negru2.jpg');">
+<div class="header">
+  <h1></h1>
+
+</div>
+<div style="color: #ffffff">
+ 
+
+<h2><p style="font-size: 40px"><ins><i>Gaurile negre</i></ins></h2>
+
+<p><p style="font-size: 20px">O gaură neagră este o regiune în spațiu-timp cu o forță gravitațională atât de mare încât nimic, nici măcar particulele și radiația electromagnetică precum lumina, nu poate scăpa odată intrat în ea. Teoria relativității generale prezice că o masă suficient de compactă poate deforma spațiul și timpul astfel încât să formeze o gaură neagră. 
+<p><p style="font-size: 20px">
+Limitele unei astfel de regiuni din care nimic nu poate scăpa este numită orizontul evenimentelor. Chiar dacă orizontul evenimentelor are un efect enorm asupra sorții și circumstanțele unui obiect care trece prin aceasta, nicio caracteristică aparentă nu poate fi observată. În multe moduri o gaură neagră se comportă ca un corp negru ideal, deoarece nu reflectă lumină deloc. Mai mult, teoria câmpului cuantic în spațiu-timp curbat prezice un orizont al evenimentelor invers proporțional masei acestuia. Temperatura este de ordinul miliardelor de grade Celsius în cazul găurilor negre de masă stelară, făcându-le, esențial, imposibil de observat.
+</p>
+<br>
+<p style="float: left; clear: left">
+<center><img src="gaura4.png"  style="width:1000px;height:450px"></center> 
+<br>
+<h2><p style="font-size: 40px"><ins><i></i></ins></h2>
+
+
+<hr>
+
+
+<br>
+<p style="float: right; clear: right">
+
+
+<p><p style="font-size: 20px">
+<h2><p style="font-size: 40px"><ins><i>Structura</i></ins></h2>
+
+<p><p style="font-size: 20px">Conjunctura fără-păr postulează că, odată ce aceasta atinge o condiție stabilă după formare, o gaură neagră are doar trei caracteristici fizice independente: masă, încărcătură și impuls unghiular: altfel, gaura neagră este lipsită de caracteristici. Dacă conjunctura este adevărată, oricare două găuri negre care servesc aceleași proprietăți, sau parametri, sunt imperceptibile una de cealaltă. Scara la care conjunctura este adevărată pentru găurile negre reale sub legile moderne ale fizicii, este momentan o problemă nerezolvată.
+
+Aceste proprietăți sunt speciale deoarece sunt vizibile din exteriorul unei găuri negre. Spre exemplu, o gaură neagră încărcată respinge alte încărcături asemănătoare la fel ca orice alt obiect încărcat. Similar, masa totală din interiorul unei sfere care conține o gaură neagră poate fi găsită folosind analogia gravitațională a Legii lui Gauss, masa ADM, departe de o gaură neagră. De asemenea, impulsul unghiular poate fi măsurat departe e o gaură neagră folosind tragerea de cadre din câmpul gravitațional.
+
+<p><p style="font-size: 20px">
+Atunci când un obiect cade într-o gaură neagră, orice informație despre forma obiectului sau distribuția încărcăturii de pe acesta este distribuită egal de-a lungul orizontului unei găuri negre, și este pierdută pentru observatorii din afară. Comportamentul orizontului este, în această situație, un sistem disipativ care este aproape analog cu acela al unei membrane conductivă cu frecare și rezistență electrică--paradigma membranei. Acest lucru este diferit de celelalte teorii ale câmpului cum ar fi electromagnetismul, care nu au nicio frecare sau rezistență la un nivel microscopic, deoarece sunt reversibile în timp. Deoarece o gaură neagră atinge, eventual, o stare stabilă cu doar trei parametrii, nu există o cale de a evita pierderea de informații despre condițiile inițiale: câmpurile gravitaționale și de încărcătură ale unei găuri negre dau foarte puține informații despre ce a intrat înăuntru. Informația care este pierdută include orice cantitate care nu poate fi măsurată departe de orizontul unei găuri negre, incluzând numerele conservate cuantic cum ar fi numărul baryon total și numărul lepton. Acest comportament este atât de încurcat încât a fost numit paradoxul informațiilor pierdute al unei găuri negre.</p>
+<br>
+<p style="float: left; clear: left">
+<center><img src="gauraneagra1.jpg"  style="width:500px;height:450px"></center> 
+<br>
+<h2><p style="font-size: 40px"><ins><i></i></ins></h2>
+
+
+<hr>
+
+
+<br>
+<p style="float: right; clear: right">
+
+
+<p><p style="font-size: 20px">
+
+
+<br>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .footer {
+            background-color: rgba(51, 51, 51, 0.6); /* Semi-transparent background */
+            color: white;
+            text-align: center;
+            padding: 8px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .footer a {
+            color: #FFD700;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Other content of the website -->
+
+    <footer class="footer">
+        <p>&copy; 2024 All rights reserved by Ilie Alexandru Cristian and Rusu Andrei Samuel.</p>
+            </footer>
+</body>
+</html>
