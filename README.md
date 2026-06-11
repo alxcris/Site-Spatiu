@@ -1,6 +1,6 @@
 # Site Spatiu
 Proiect: Calea Lactee
-Acest proiect reprezintă un site web simplu, construit în HTML și CSS, dedicat prezentării informațiilor despre Spațiul Cosmic și corpurile cerești.
+Acest proiect reprezintă un site web simplu, construit în HTML și CSS, dedicat prezentării informațiilor despre Spațiul Cosmic și corpurile cerești.A fost realizat pentru proba de atestat la informatică.
 
 📝 Descriere
 Proiectul urmărește să combine elemente de design atrăgătoare, specifice tematicii spațiale (culori închise, elemente flotante, imagini stelare), cu o structură web clară.
